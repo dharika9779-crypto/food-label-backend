@@ -13,7 +13,7 @@ app = FastAPI(title="AI Ingredient Transparency System")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["*"],  # sab allow
     allow_methods=["*"],
     allow_headers=["*"],
 )
